@@ -429,75 +429,72 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
         function style_taller2sig3_mnccobertura_uso_suelo_4_0(feature) {
-            var context = {
-                feature: feature,
-                variables: {}
-            };
-            // Start of if blocks and style check logic
-            if (exp_taller2sig3_mnccobertura_uso_suelo_4rule0_eval_expression(context)) {
-                  return {
-                pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(247,252,245,1.0)',
-                interactive: true,
-            };
-                }
-                else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule1_eval_expression(context)) {
-                  return {
-                pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(201,234,194,1.0)',
-                interactive: true,
-            };
-                }
-                else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule2_eval_expression(context)) {
-                  return {
-                pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(123,199,124,1.0)',
-                interactive: true,
-            };
-                }
-                else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule3_eval_expression(context)) {
-                  return {
-                pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 4.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(42,146,75,1.0)',
-                interactive: true,
-            };
-                }
-            else {
-                return {fill: false, stroke: false};
-            }
-        }
+    var context = {
+        feature: feature,
+        variables: {}
+    };
+
+    if (exp_taller2sig3_mnccobertura_uso_suelo_4rule0_eval_expression(context)) {
+        return {
+            pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
+            opacity: 1,
+            color: 'rgba(255, 0, 0, 1.0)', // Cambié el color de la línea a rojo
+            dashArray: '',
+            lineCap: 'round', // Cambié el estilo del extremo de la línea a redondeado
+            lineJoin: 'round', // Cambié el estilo de unión de líneas a redondeado
+            weight: 4.0,
+            fill: true,
+            fillOpacity: 1,
+            fillColor: 'rgba(0, 0, 255, 1.0)', // El relleno ahora es azul
+            interactive: true,
+        };
+    } else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule1_eval_expression(context)) {
+        return {
+            pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
+            opacity: 1,
+            color: 'rgba(255, 165, 0, 1.0)', // Cambié el color de la línea a naranja
+            dashArray: '',
+            lineCap: 'round',
+            lineJoin: 'round',
+            weight: 4.0,
+            fill: true,
+            fillOpacity: 1,
+            fillColor: 'rgba(173, 216, 230, 1.0)', // El relleno ahora es azul claro
+            interactive: true,
+        };
+    } else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule2_eval_expression(context)) {
+        return {
+            pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
+            opacity: 1,
+            color: 'rgba(0, 128, 0, 1.0)', // Cambié el color de la línea a verde oscuro
+            dashArray: '',
+            lineCap: 'round',
+            lineJoin: 'round',
+            weight: 4.0,
+            fill: true,
+            fillOpacity: 1,
+            fillColor: 'rgba(255, 255, 0, 1.0)', // El relleno ahora es amarillo
+            interactive: true,
+        };
+    } else if (exp_taller2sig3_mnccobertura_uso_suelo_4rule3_eval_expression(context)) {
+        return {
+            pane: 'pane_taller2sig3_mnccobertura_uso_suelo_4',
+            opacity: 1,
+            color: 'rgba(128, 0, 128, 1.0)', // Cambié el color de la línea a morado
+            dashArray: '',
+            lineCap: 'round',
+            lineJoin: 'round',
+            weight: 4.0,
+            fill: true,
+            fillOpacity: 1,
+            fillColor: 'rgba(255, 192, 203, 1.0)', // El relleno ahora es rosa claro
+            interactive: true,
+        };
+    } else {
+        return { fill: false, stroke: false };
+    }
+}
+ }
         map.createPane('pane_taller2sig3_mnccobertura_uso_suelo_4');
         map.getPane('pane_taller2sig3_mnccobertura_uso_suelo_4').style.zIndex = 404;
         map.getPane('pane_taller2sig3_mnccobertura_uso_suelo_4').style['mix-blend-mode'] = 'normal';
